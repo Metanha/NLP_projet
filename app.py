@@ -101,7 +101,7 @@ st.markdown("""
 
 
 model = joblib.load("modele_regression_logistique.joblib")
-vectorizer = joblib.load("vectoriseur_tfidf_1000.joblib")
+vectorizer = joblib.load("vectoriseur_tfidf.joblib")
 nlp = spacy.load("fr_core_news_md")
 
 # 🧽 Fonction de nettoyage
