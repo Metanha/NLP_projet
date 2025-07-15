@@ -11,8 +11,7 @@ from typing import Union, List
 
 # --- CONFIG PAGE ---
 # Page Streamlit
-st.set_page_config(page_title="Correcteur Grammatical", page_icon="📘", layout="centered")
-
+#st.set_page_config(page_title="Correcteur Grammatical", page_icon="📘", layout="centered")
 
 st.sidebar.title("🎨 Thème")
 theme = st.sidebar.selectbox("Choisissez un thème :", ["Clair", "Bleu", "Beige"])
@@ -144,11 +143,11 @@ def nettoyer_texte(texte:str):
 
 
 # 🖼️ Interface utilisateur
-st.title("🗣️ Classification d'avis client")
+st.title("🗣️ Classification des avis des clients")
 st.markdown("Détermine si un avis est **positif** ou **négatif**")
 
 # Zone de saisie
-avis = st.text_area("✍️ Saisis un avis client ici :",
+avis = st.text_area("Saisis un avis client ici :",
                     placeholder="Tapez votre avis ici...")
 
 if st.button("Analyser"):
