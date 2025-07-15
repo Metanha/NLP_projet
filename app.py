@@ -100,7 +100,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-model = joblib.load("modele_svm_tf.joblib")
+model = joblib.load("modele_regression_logistique.joblib")
 vectorizer = joblib.load("vectoriseur_tfidf_1000.joblib")
 nlp = spacy.load("fr_core_news_md")
 
