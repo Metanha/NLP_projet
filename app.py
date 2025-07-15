@@ -143,7 +143,7 @@ def nettoyer_texte(texte:str):
 
 
 # 🖼️ Interface utilisateur
-st.title("🗣️ Classification des avis des clients")
+st.title("🗣️ Classification des avis clients")
 st.markdown("Détermine si un avis est **positif** ou **négatif**")
 
 # Zone de saisie
