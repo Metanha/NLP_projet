@@ -9,6 +9,11 @@ import unicodedata
 import emoji
 from typing import Union, List
 
+# --- CONFIG PAGE ---
+# Page Streamlit
+st.set_page_config(page_title="Correcteur Grammatical", page_icon="📘", layout="centered")
+
+
 st.sidebar.title("🎨 Thème")
 theme = st.sidebar.selectbox("Choisissez un thème :", ["Clair", "Bleu", "Beige"])
 
@@ -60,10 +65,6 @@ elif theme == "Beige":
 st.markdown(css, unsafe_allow_html=True)
 # Appliquer le CSS
 #st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
-
-# --- CONFIG PAGE ---
-# Page Streamlit
-st.set_page_config(page_title="Correcteur Grammatical", page_icon="📘", layout="centered")
 
 # Titre dynamique avec date formatée en français
 jours = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
